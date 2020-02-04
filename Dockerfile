@@ -3,7 +3,7 @@ FROM registry.cn-hangzhou.aliyuncs.com/esiran/maccms:php7.2-fpm
 RUN php-ext-sg-install.sh
 
 
-COPY . ./template/conch
+COPY . template/conch
 
 RUN chown -R www-data:www-data template/conch
 
